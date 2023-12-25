@@ -6,3 +6,5 @@ Use Fcitx5 instead, work like a charm
 # VScode:
 I fixed some issue with icon by changing to font:
 `'DejaVuSansM Nerd Font Mono'`
+
+# Hello

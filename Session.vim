@@ -16,7 +16,6 @@ endif
 badd +1 til_12_2023/day_17
 badd +1 til_12_2023/day_16
 badd +15 til_12_2023/day_18
-badd +3 til_12_2023/README.md
 badd +11 til_12_2023/day_13.md
 badd +11 til_12_2023/day_18.md
 badd +2 til_12_2023/day_19.md
@@ -24,7 +23,8 @@ badd +11 til_12_2023/.git/config
 badd +1 til_12_2023/day_14.md
 badd +1 til_12_2023/.git/ORIG_HEAD
 badd +1 til_12_2023/day_22.md
-badd +7 til_12_2023/day_25.md
+badd +10 til_12_2023/day_25.md
+badd +0 ~/til/README.md
 argglobal
 %argdel
 edit til_12_2023/day_25.md
@@ -52,12 +52,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 7 - ((6 * winheight(0) + 12) / 24)
+let s:l = 10 - ((9 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 7
-normal! 030|
+keepjumps 10
+normal! 07|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
