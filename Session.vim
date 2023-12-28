@@ -23,11 +23,14 @@ badd +11 til_12_2023/.git/config
 badd +1 til_12_2023/day_14.md
 badd +1 til_12_2023/.git/ORIG_HEAD
 badd +1 til_12_2023/day_22.md
-badd +10 til_12_2023/day_25.md
-badd +0 ~/til/README.md
+badd +19 til_12_2023/day_25.md
+badd +1 ~/til/README.md
+badd +1 til_12_2023/day_26.md
+badd +3 til_12_2023/day_27.md
+badd +22 til_12_2023/day_28.md
 argglobal
 %argdel
-edit til_12_2023/day_25.md
+edit til_12_2023/day_28.md
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -41,7 +44,7 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-balt til_12_2023/day_22.md
+balt ~/til/README.md
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -52,12 +55,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 10 - ((9 * winheight(0) + 12) / 24)
+let s:l = 23 - ((22 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 10
-normal! 07|
+keepjumps 23
+normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
